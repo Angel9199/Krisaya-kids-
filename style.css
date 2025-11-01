@@ -1,3 +1,92 @@
 h1{
     color:aqua
+    forestgreen
 }
+
+.header {
+    background-color: #FFF0DD;
+
+}
+
+.Logo {
+    position: absolute;
+  left: 50px;  /* X */
+  top: 0px;    /* Y */
+}
+
+ 
+.navbar {
+  background-color: #FFF0DD;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 33px;
+  padding: 0;
+}
+
+.navbar li {
+  text-align: center;
+  flex: 1;
+  margin: 33px;
+  }
+
+.boton,
+
+.Carrito {
+  background: none;
+  border: none;
+  color: #C28E7B; 
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boton i,
+.Carrito i {
+  font-size: 20px;
+}
+
+.catalogo {
+ display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #FFF0DD;
+} 
+
+.producto {
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  text-align: center; 
+}
+
+.producto-imagen {
+  width: 150px;
+  height: 192px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto-titulo {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+
+
+
