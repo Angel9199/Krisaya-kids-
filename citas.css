@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #FFF0DD;
+    font-family: 'Segoe UI', sans-serif;   
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.appointment-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+/* Imagen de perfil */
+.img-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ccc;
+  margin-bottom: 12px;
+}
+
+/* Nombre */
+h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+/* Slider de meses */
+.month-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.month {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.month:hover {
+  background-color: #d0d0d0;
+}
+
+.month.past {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Fechas */
+.dates, .schedules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dates button,
+.schedules button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.dates button:hover,
+.schedules button:hover {
+  background-color: #ffe0b2;
+  transform: scale(1.05);
+}
+
+button.active {
+  background-color: #9CAFAA;
+  color: white;
+}
+
+/* Botón de reservar */
+.book-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #D6A99D;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #D6DAC8;
+  transform: scale(1.03);
+}
+
+/* Tabs y contenido */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.tab-content {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.servicio-btn {
+  padding: 12px 25px;
+  background-color: #9CAFAA;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.servicio-btn:hover {
+  background-color: #D6DAC8;
+  transform: scale(1.03);
+}
+
+

@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF0DD;
+}
+
+.atencion-cliente {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #D6DAC8;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.atencion-cliente h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.atencion-cliente h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+  color: #555;
+}
+
+.atencion-cliente p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.canales {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.servicio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight 
+}
+  

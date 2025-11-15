@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crisaya kids</title>
-    <<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head> 
 </head>
 <body>
-   
-<header class="header" >
 
+<div class="barra-busqueda">
+  <input type="text" id="buscador" placeholder="Buscar productos...">
+  <button onclick="buscar()"><i class="bi bi-search"></i></button>
+</div>
+
+<header class="header">
     <div class="menu-contsiner">
           <a herf="#" class="logo"></a>
         <label for="menu">
@@ -20,22 +25,24 @@
         <nav Class="navbar">  
             <ul> 
                 
-                <li><a class="boton menu boton-Inicio" href="">
+                <li><a class="boton" href="">
                     <i class="bi bi-house-door-fill"></i>Inicio</a>
                 </li>
 
-                <li><a class="boton menu boton-Categorias" href="./categorias.html" >
+                <li><a class="boton" href="./categorias.html" >
                     <i class="bi bi-search"></i>categorias</a>
                     </li>
 
-                 <li><button class="boton menu boton-Citas" href="./citas.html">
-                    <i class="bi bi-calendar3"></i>Citas</a>
+                <li><a class="boton" href="./citas.html" >
+                   <i class="bi bi-calendar3"></i>Citas</a>
                     </li>
 
-                <li><a class="boton menu boton-Yo" href="./yo.html"><i class="bi bi-person-fill"></i>Yo</button>
+                 
+                <li><a class="boton" href="./yo.html">
+                  <i class="bi bi-person-fill"></i>Yo</button>
                     </li>
 
-                 <li><a class="Carrito" href="./carrito.html">
+                 <li><a class="boton" href="./carrito.html">
                     <i class="bi bi-cart-fill"></i>Carrito</a>
                 </li>
                 
@@ -45,164 +52,128 @@
     </div>
 </header>
 <main>
+ 
  <div class="catalogo">
   <div class="producto">
     <img class="producto-imagen" src="./Conjunto1.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 01</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Conjunto en escuba y balbetin</h3>
+      <p class="producto-precio">$50.000</p>
     </div>
   </div>
   <div class="producto">
     <img class="producto-imagen" src="./Conjunto2.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Sudadera antifluido y blusa en poli licra</h3>
+      <p class="producto-precio">$80.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto3.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 03</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Conjunto de blusa corta</h3>
+      <p class="producto-precio">$60.000</p>
     </div>
   </div>
  <div class="producto">
     <img class="producto-imagen" src="./Conjunto4.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 04</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Overol en tela vengalina</h3>
+      <p class="producto-precio">$60.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto5.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 05</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Camiseta de hojas en licra y pantaloneta en burda</h3>
+      <p class="producto-precio">$40.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto6.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 06</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Camiseta en poli licra y shorts en burda</h3>
+      <p class="producto-precio">$80.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Oberol .jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Oberol en tela galleta</h3>
+      <p class="producto-precio">$40.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Pijama 01.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Sudadera en dracón y blusa en algodon</h3>
+      <p class="producto-precio">$70.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto7.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y falda en chalis</h3>
+      <p class="producto-precio">$60.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto8.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Falda y vestido floreado</h3>
+      <p class="producto-precio">$70.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto9.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
-    </div>
-  </div>
-   <div class="producto">
-    <img class="producto-imagen" src="./Conjunto10.jpg" width="150" height="192">
-    <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
-    </div>
-  </div>
-   <div class="producto">
-    <img class="producto-imagen" src="./Conjunto11.jpg" width="150" height="192">
-    <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Conjunto en escuba y belbetin</h3>
+      <p class="producto-precio">$90.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto12.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
-    </div>
-  </div>
-   <div class="producto">
-    <img class="producto-imagen" src="./Conjunto13.jpg" width="150" height="192">
-    <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusón en franela licrada y shorts en vengalina</h3>
+      <p class="producto-precio">$120.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./cONJUNTO14.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
-    </div>
-  </div>
-   <div class="producto">
-    <img class="producto-imagen" src="./Conjunto15.jpg" width="150" height="192">
-    <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y falda en popelina</h3>
+      <p class="producto-precio">$90.000</p>
     </div>
   </div>
    <div class="producto">
     <img class="producto-imagen" src="./Conjunto16.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y sudadera en burda licrada</h3>
+      <p class="producto-precio">$100.000</p>
     </div>
   </div>
-   <div class="producto">
+  <div class="producto">
     <img class="producto-imagen" src="./Conjunto17.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y sudadera en burda licrada</h3>
+      <p class="producto-precio">$100.000</p>
     </div>
   </div>
-   <div class="producto">
+  <div class="producto">
     <img class="producto-imagen" src="./Conjunto18.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y sudadera en burda licrada</h3>
+      <p class="producto-precio">$100.000</p>
     </div>
   </div>
-   <div class="producto">
+  <div class="producto">
     <img class="producto-imagen" src="./Conjunto19.jpg" width="150" height="192">
     <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
+      <h3 class="producto-titulo">Blusa en poli licra y sudadera en burda licrada</h3>
+      <p class="producto-precio">$100.000</p>
     </div>
   </div>
-   <div class="producto">
-    <img class="producto-imagen" src="./Conjunto20.jpg" width="150" height="192">
-    <div class="producto-detalles">
-      <h3 class="producto-titulo">Conjunto 02</h3>
-      <p class="producto-precio">Agregar</p>
-    </div>
   </div>
-</div>
-
-        
 </main>
 
 <section class="">

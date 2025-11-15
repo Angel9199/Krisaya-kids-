@@ -1,6 +1,7 @@
-h1{
-    color:aqua
-    forestgreen
+body {
+  background-color: #FFF0DD; 
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -10,7 +11,7 @@ h1{
 
 .Logo {
     position: absolute;
-  left: 50px;  /* X */
+  left: 36px;  /* X */
   top: 0px;    /* Y */
 }
 
@@ -39,23 +40,20 @@ h1{
 
 .boton,
 
-.Carrito {
-  background: none;
-  border: none;
-  color: #C28E7B; 
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
+.boton {
+  color: #D6A99D;
+  display: inline-block;
+  border-radius: 20px;
   text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.boton i,
-.Carrito i {
-  font-size: 20px;
+.boton:hover {
+  transform: scale(1.05); /* zoom del 5% */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra suave */
 }
+
 
 .catalogo {
  display: flex;
@@ -64,7 +62,11 @@ h1{
   justify-content: center;
   padding: 20px;
   background-color: #FFF0DD;
+  cursor: pointer;
+
 } 
+
+
 
 .producto {
   border-radius: 10px;
@@ -79,6 +81,11 @@ h1{
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: background-color 0.9s ease;
+}
+
+.producto-imagen:hover {
+  transform: scale(1.03);
 }
 
 .producto-titulo {
@@ -87,6 +94,35 @@ h1{
   color: #333;
 }
 
+.barra-busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13px auto;
+  gap: 21px;
+}
 
+.barra-busqueda{
+    background-color: #FFF0DD;
+}
 
+.barra-busqueda input {
+  padding: 10px;
+  width: 998px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.barra-busqueda button {
+  padding: 10px 16px;
+  background-color: #FFF0DD;
+  color: #D9D9D9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.barra-busqueda button:hover {
+  background-color: #D6DAC8;}
 

@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF0DD;
+  color: #333;
+}
+
+.seguimiento-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #9CAFAA;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Encabezado */
+.seguimiento-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.seguimiento-container p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Línea de progreso */
+.estado-tracker {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.estado-tracker li {
+  flex: 1;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.estado-tracker li i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estados */
+.estado-tracker li.completado {
+  background-color: #D6A99D;
+  color: #fff;
+}
+
+.estado-tracker li.activo {
+  background-color: #D6DAC8;
+  color: #fff;
+}
+
+.estado-tracker li.completado i,
+.estado-tracker li.activo i {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .estado-tracker {
+    flex-direction: column;
+  }
+}

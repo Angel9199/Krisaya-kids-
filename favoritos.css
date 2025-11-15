@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF0DD; 
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.Favoritos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.favoritos-imagen,
+.favorito-imagen {
+  width: 150px;
+  height: 192px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto-detalles {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.producto-titulo {
+  font-size: 16px;
+  margin: 4px 0;
+  color: #333;
+}
+
+.producto-precio {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #D6DAC8;
+  color: #D6A99D;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* forma tipo pill */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.producto-precio:hover {
+  transform: scale(1.05); /* zoom leve */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
